@@ -131,6 +131,7 @@
 				cart : [],
 			}
 			customers.push(customer);
+			return customer;
 		}
 
 		function createNewItem(name, price, id) {
@@ -143,7 +144,8 @@
 				quantity : 0,
 				id : id,
 			}
-			inventory.push(newItem)
+			inventory.push(newItem);
+			return newItem;
 		}
 
 		// checkOutCustomer(customers[0], true);
